@@ -188,8 +188,10 @@ img {
 }
 
 .modal-btn {
-  display: inline-block;
-  text-align: center;
+  display: flex;
+  /* text-align: center; */
+  margin-right: auto;
+  margin-left: auto;
   font-family: var(--main-font);
   font-style: normal;
   font-weight: 700;
