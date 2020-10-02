@@ -120,14 +120,33 @@ img {
   margin-right: 50px;
 }
 
-.navigation-list:hover,
-.navigation-list:focus,
+.navigation-link:hover,
+.navigation-link:focus,
 .address-list:hover,
 .address-list:focus {
   color: var(--accent-color);
 }
 
-.e-mail::before {
+.envelope-icon {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: var(--primery-description-color);
+}
+
+/* щось тут не так в ховері і в вирівнюванні*/
+.envelope-icon:hover,
+.smartphone-icon:hover {
+  fill: var(--accent-color);
+}
+
+.smartphone-icon {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: var(--primery-description-color);
+}
+/* .e-mail::before {
   display: inline-block;
   content: '';
   width: 16px;
@@ -145,7 +164,7 @@ img {
   margin-right: 10px;
   background-image: url(../images/svg/smartphone.svg);
   background-size: contain;
-}
+} */
 
 /*=====END HEADER=====*/
 
@@ -243,16 +262,26 @@ img {
   color: var(--primery-description-color);
 }
 
-.list-features {
-  width: 270px;
-  /* height: 251px; */
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.features-icon {
+  width: 70px;
+  height: 70px;
 }
 
 .list-features:not(:last-child) {
   margin-right: 30px;
 }
 
-.list-features::before {
+/* .list-features::before {
   display: block;
   content: '';
   height: 120px;
@@ -278,7 +307,7 @@ img {
 
 .features-astronaut::before {
   background-image: url('../images/svg/astronaut\ 1.svg');
-}
+} */
 
 /*=====END FEATURES=====*/
 
@@ -337,6 +366,7 @@ img {
   line-height: 1.188;
   letter-spacing: 0.03em;
   color: var(--primery-description-color);
+  margin-bottom: 16px;
 }
 
 .our-team .list {
@@ -361,16 +391,80 @@ img {
 .team-list {
   text-align: center;
   width: 270px;
-  height: 368px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
+
+.our-team .social-links {
+  display: flex;
+  justify-content: center;
+  /* margin-right: auto;
+  margin-left: auto; */
+}
+
+.social-link {
+  width: 20px;
+  height: 20px;
+}
+
+.social-items {
+  display: block;
+  justify-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  padding: 12px;
+}
+
+.social-items:not(:last-child) {
+  margin-right: 10px;
+}
 /*=====END OUR TEAM=====*/
+
+/*=====REGULAR CLIENTS=====*/
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.clients-title {
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.167;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--primery-title-color);
+
+  margin-bottom: 50px;
+}
+
+.clients-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.clients-items {
+  display: block;
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+/*=====END CLIENTS=====*/
 
 /*=====FOOTER=====*/
 
+.footer .container {
+  display: flex;
+}
+
+.footer-address {
+  margin-right: 70px;
+}
 .logo-footer {
   font-family: var(--secondary-font);
   font-style: normal;
@@ -411,9 +505,26 @@ img {
   margin-bottom: 20px;
 }
 
-.footer .list li:not(:last-child) {
+.footer-contacts:not(:last-child) {
   margin-bottom: 9px;
 }
+
+.join {
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+.footer .social-links {
+  display: flex;
+}
+/* .join .social-items {
+  background: rgba(255, 255, 255, 0.1);
+} */
 /*=====END FOOTER=====*/
 /*=====END STUDIO=====*/
 
