@@ -99,7 +99,10 @@ img {
   color: var(--accent-color);
 }
 
-.address-list {
+.address-link {
+  /* display: inline-flex;
+  align-items: center;
+  justify-content: center; */
   font-family: var(--main-font);
   font-style: normal;
   font-weight: 500;
@@ -116,14 +119,14 @@ img {
   margin-left: auto;
 }
 
-.address-list:not(:last-child) {
+.address-link:not(:last-child) {
   margin-right: 50px;
 }
 
 .navigation-link:hover,
 .navigation-link:focus,
-.address-list:hover,
-.address-list:focus {
+.address-link:hover,
+.address-link:focus {
   color: var(--accent-color);
 }
 
@@ -134,12 +137,6 @@ img {
   fill: var(--primery-description-color);
 }
 
-/* щось тут не так в ховері і в вирівнюванні*/
-/* .envelope-icon:hover,
-.smartphone-icon:hover {
-  fill: var(--accent-color);
-} */
-
 .smartphone-icon {
   width: 10px;
   height: 16px;
@@ -147,6 +144,10 @@ img {
   fill: var(--primery-description-color);
 }
 
+.address-link:hover .envelope-icon,
+.address-link:hover .smartphone-icon {
+  fill: var(--accent-color);
+}
 /*=====END HEADER=====*/
 
 /*=====HERO=====*/
@@ -436,12 +437,26 @@ img {
   justify-content: space-between;
 }
 
-.clients-items {
-  display: block;
+.clients-list-link:hover .clients-list-logo {
+  fill: var(--accent-color);
+}
+
+.clients-list-link:hover {
+  border: 1px solid var(--accent-color);
+}
+
+.clients-list-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 170px;
   height: 90px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+}
+
+.clients-list-logo {
+  fill: #afb1b8;
 }
 /*=====END CLIENTS=====*/
 
@@ -449,6 +464,7 @@ img {
 
 .footer .container {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-address {
