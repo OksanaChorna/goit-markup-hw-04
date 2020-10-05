@@ -145,7 +145,9 @@ img {
 }
 
 .address-link:hover .envelope-icon,
-.address-link:hover .smartphone-icon {
+.address-link:hover .smartphone-icon,
+.address-link:focus .envelope-icon,
+.address-link:focus .smartphone-icon {
   fill: var(--accent-color);
 }
 /*=====END HEADER=====*/
@@ -402,11 +404,13 @@ img {
   height: 20px;
   fill: #afb1b8;
 }
-.social-list-link:hover .social-list-svg {
+.social-list-link:hover .social-list-svg,
+.social-list-link:focus .social-list-svg {
   fill: white;
 }
 
-.social-list-link:hover {
+.social-list-link:hover,
+.social-list-link:focus {
   background-color: var(--accent-color);
 }
 
@@ -437,11 +441,13 @@ img {
   justify-content: space-between;
 }
 
-.clients-list-link:hover .clients-list-logo {
+.clients-list-link:hover .clients-list-logo,
+.clients-list-link:focus .clients-list-logo {
   fill: var(--accent-color);
 }
 
-.clients-list-link:hover {
+.clients-list-link:hover,
+.clients-list-link:focus {
   border: 1px solid var(--accent-color);
 }
 
